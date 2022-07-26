@@ -1,0 +1,862 @@
+@font-face {
+  font-family: 'fontstella';
+  src: url('../font/fontstella.eot?94066010');
+  src: url('../font/fontstella.eot?94066010#iefix') format('embedded-opentype'),
+       url('../font/fontstella.woff2?94066010') format('woff2'),
+       url('../font/fontstella.woff?94066010') format('woff'),
+       url('../font/fontstella.ttf?94066010') format('truetype'),
+       url('../font/fontstella.svg?94066010#fontstella') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ------ Specification ------ */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	background: url(../img/pattern.jpg);
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.3s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+/*table {
+	margin: 0;
+	padding: 0;
+}*/
+
+h2 {
+	color: #ff6600;
+}
+
+/* ------ INDEX_page_start------ */
+
+/* ------ INDEX_first_screen_start ------ */
+/*fixed_navigation_start */
+.main-nav {
+	z-index: 1000;
+	width: 100%;
+}
+
+.main-nav.sticky {
+    position: fixed;
+    margin-top: -107px;
+    transition: all 0.3ms ease;
+	z-index: 1000;
+	width: 100%;
+}
+/* fixed_navigation_finish */
+
+.header .main-header__logo img {
+	width: 53%;
+	max-width: 100%;
+}
+
+.header .main-header__logo_noclick img:hover {
+	cursor: default;
+}
+
+.main-header {
+	padding: 10px 0;
+	background: #fff;
+}
+
+.main-header__numbers a {
+	color: #171e26;
+	font-weight: 500;
+}
+
+.main-header__email a {
+	color: #171e26;
+	font-weight: 500;
+}
+
+.header .fa-phone,
+.fa-envelope {
+	color: #0F4C81;
+}
+
+.main-header__numbers a:hover,
+.main-header__email a:hover {
+	color: #a6a6a6;
+}
+
+.main-header__numbers a:active,
+.main-header__email a:active {
+	color: #262626;
+}
+
+.header .fa-sistrix {
+	color: #fff;
+}
+
+.header .fa-bars {
+	color: #fff;
+}
+
+.main-header__search button {
+	width: 35px;
+	height: 35px;
+	border-radius: 2px;
+	background: #0f4c82;
+	border: none;
+	outline: none;
+}
+
+.main-header__search button:hover {
+	opacity: 0.8;
+}
+
+.main-nav {
+	background: #FF805B;
+	padding: /*3px 0*/ 0;
+}
+
+/*это временный класс-надо задать класс, чтобы не конфликтовал с гамбургером*//*.main-nav*/.menu---W a {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.header-picture {
+	padding: 150px 0 150px;
+	background: url(../img/header.jpg) no-repeat  center center / cover;
+	border-bottom: 4px solid #FF805B;
+}
+
+.offer__title {
+	color: #fff;
+	font-family: 'Impact', sans-serif;
+	font-size: 93px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.05em;
+	-moz-text-shadow: 5px 5px 0 #000;
+	-webkit-text-shadow: 5px 5px 0 #000;
+	text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.offer__text {
+	color: #fff;
+	font-size: 19px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+}
+
+.menu__link:after  {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	transform: scale(0);
+}
+
+.menu__link:hover:after {
+	transform: scale(1);
+	transition: all 0.4s ease; 
+	background: rgba(255, 255, 255, 0.3);
+}  
+
+.menu__link:active:after {
+	transform: scale(1);
+	transition: all 0.4s ease; 
+	background: rgba(255, 255, 255, 0.9);
+} 
+
+.menu__link_trainings-noclick:hover,
+.menu__link_schedule-noclick:hover,
+.menu__link_online-noclick:hover,
+.menu__link_trainers-noclick:hover,
+.menu__link_contacts-noclick:hover {
+	cursor: default;
+} 
+
+.contacts-item a:hover{
+	color: #FF845B;
+}
+
+.order-call {
+	background: #fff;
+	color: #082844;
+	padding: 7px 18px;
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.order-call:hover {
+	background: rgba(242, 242, 242, 1);
+}
+
+.order-call:active {
+	background: rgba(242, 242, 242, 0.9);
+}
+/* ------ INDEX_first_screen_finish ------ */
+
+/* ------ INDEX_upcoming-trainings_start ------ */
+.upcoming-trainings {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.coaching {
+	color: #000;
+}
+
+.upcoming-trainings__title {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.coaching__photo {
+	width: 100%;
+	max-width: 100%;
+}
+
+.coaching__mentor img {
+	margin-right: 10px;
+	width: 20%;
+}
+
+.coaching__mentor p {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.coaching__theme {
+	color: #CC5200;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.coaching__date {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.coaching__info {
+	padding: 10px;
+	background: rgba(242, 242, 242, 0.7);
+}
+
+.coaching__info:hover {
+	background: #dfe5ec;
+}
+/* ------ INDEX_upcoming-trainings_finish------ */
+
+/* ------ INDEX_upcoming-workshop_start ------ */
+.upcoming-workshop {
+	padding-bottom: 50px;
+}
+
+.workshop {
+	color: #000;
+}
+
+.upcoming-workshop__title {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.workshop__photo {
+	width: 100%;
+	max-width: 100%;
+}
+
+.workshop__mentor img {
+	margin-right: 10px;
+	width: 20%;
+}
+
+.workshopg__theme {
+	color: #E86335;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.workshop__date {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.workshop__info {
+	padding: 10px;
+	background: rgba(242, 242, 242, 0.7);
+}
+
+.workshop__info:hover {
+	background: #dfe5ec;
+}
+/* ------ INDEX_upcoming-workshop_finish------ */
+
+/* ------ INDEX_footer_start ------ */
+.footer {
+	padding: 50px 0;
+	background: #171e26;
+	color: #fff;
+	font-size: 14px;
+}
+
+.footer h3 {
+	font-size: 18px;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.social__link {
+	display: block;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px; 
+	text-align: center;
+	border-radius: 50px;
+	background: #ff845b;
+	font-size: 20px;
+	line-height: 37px;
+
+	color: #fff;
+}
+
+.social-fa:hover {
+	color: rgb(255, 132, 91);
+	background: #fff;
+}
+
+.social-fa:active {
+	color: rgba(255, 132, 91, 0.7);
+	background: #fff;
+}
+
+.footer .social__icons {
+   height: 100%;
+   color: #fff;
+}
+
+.footer .social {
+	height: 100%;
+}
+
+.charter__link:hover,
+.different__link:hover,
+.projects__link:hover,
+.knowledge-base__link:hover {
+	color: #4d6480;
+}
+/* ------ INDEX_footer_finish ------ */
+
+/* ------ INDEX_page_finish------ */
+
+
+
+/* ------ SCHEDULE_page_start------ */
+
+/* ------ SCHEDULE_first_screen_start ------ */
+.header-picture-schedule-inner {
+	padding: 150px 0 150px 0;
+	background: url(../img/picture-4.jpg);
+	border-bottom: 4px solid #FF805B;
+}
+
+.header-picture-schedule-inner .your-training__title {
+	font-size: 45px;
+	width: 500px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+	-moz-text-shadow: 3px 3px 0 #000;
+	-webkit-text-shadow: 3px 3px 0 #000;
+	text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.main-header__logo img:hover {
+	cursor: pointer;
+}
+/* ------ SCHEDULE_first_screen_finish ------ */
+
+
+/* ------ SCHEDULE_plan_start ------ */
+.month__which-month {
+	margin-right: 0;
+}
+
+.month__which-month {
+	margin-bottom: 30px;
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-size: 22px;
+	color: #E86335;
+	font-weight: 500;
+}
+.month__which-monthhh {
+	margin-top: 20px;
+}
+
+.plan {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.plan-card {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #000;
+}
+
+.plan-card .container {
+	width: 960px;
+}
+
+.plan-card__title {
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.plan-card__photo {
+	width: 100%;
+	max-width: 100%;
+}
+
+.plan-card img {
+	margin-right: 10px;
+	width: 20%;
+}
+
+.plan-card__theme {
+	color: #E86335;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.plan-card__date {
+	font-weight: bold;
+	margin-bottom: 10px;
+	flex-direction: column;
+ 	display: flex;
+ }
+
+ .plan-card__date span{
+ 	font-size: 15px;
+ 	color: #000000;
+ }
+
+.plan-card__info {
+	padding: 10px;
+	background: rgba(242, 242, 242, 0.7);
+}
+
+a.reference {
+	display: block;
+} 
+
+.plan-card:hover {
+	background: #dfe5ec;
+}
+/* ------ SCHEDULE_plan_finish ------ */
+
+/* ------ SCHEDULE_page_finish------ */
+
+
+
+/* ------ TRAININGS_upcoming-trainings_Dnipro_start------ */
+
+/* ------TRAININGS_header-picture-teaching-inner_start ------ */
+.header-picture-teaching-inner {
+	padding: 150px 0 150px 0;
+	background: url(../img/picture-3.jpg) no-repeat center center / cover;
+	border-bottom: 4px solid #FF805B;
+}
+
+.teaching__title {
+	margin-bottom: 30px;
+	font-size: 37px;
+	color: #fff;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+	letter-spacing: 0.01em;
+}
+
+.teach-block {
+	padding: 7px;
+	margin-bottom: 20px;
+	color: #fff;
+	background: -moz-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(64,64,64,0.65) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(38,38,38,1)), color-stop(100%, rgba(64,64,64,0.65)));
+	background: -webkit-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(64,64,64,0.65) 100%);
+	background: -o-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(64,64,64,0.65) 100%);
+	background: -ms-linear-gradient(top, rgba(38,38,38,1) 0%, rgba(64,64,64,0.65) 100%);
+	background: linear-gradient(to bottom, rgba(38,38,38,0.9) 0%, rgba(64,64,64,0.65) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', endColorstr='#404040', GradientType=0 );
+	border-top: 2px solid rgba(255,255,255,0.7);
+	border-bottom: 2px solid rgba(255,255,255,0.7);
+	border-radius: 10px;
+}
+
+.teach-block:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.header-picture-trainings-inner .container {
+	width: 960px;
+}
+
+.header-picture-trainings-inner {
+	padding: 50px 0 50px 0;
+	background: url(../img/picture-4.jpg) no-repeat center center / cover;
+	border-bottom: 4px solid #FF805B;
+}
+
+.teach-block__name {
+	width: 75%;
+	margin-left: 10px;
+}
+
+.teach-block__icon {
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	background: #fff;
+	color: #fff;
+	font-size: 35px;
+	font-family: "fontstella";
+}
+
+.teach-block__icon img {
+	width: 65%;
+	color: white;
+}
+
+img.presenter {
+	width: 90%;
+}
+
+.teach-block__name {
+	text-shadow: 1px 1px #000;
+}
+
+.teach-block__icon_star {
+	color: #0f4c82;
+	text-shadow: 2px 2px 0 rgba(255, 255, 255, 1);
+}
+
+.teach-block__icon_extra {
+	font-family: 'Impact', sans-serif;
+}
+/* ------TRAININGS_header-picture-teaching-inner_finish ------ */
+
+/* ------ TRAININGS_upcoming-trainings_Dnipro_finish------ */
+
+
+
+/* ------ ONLINE_page_start------ */
+
+/* ------ ONLINE_header-picture-online-inner_start ------ */
+.header-picture-online-inner {
+	padding: 150px 0 150px 0;
+	background: url(../img/header-icons-bg.jpg) no-repeat center center / cover;
+	border-bottom: 4px solid #FF805B;
+
+}
+
+.online-title {
+	font-size: 37px;
+	color: #fff;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+	letter-spacing: 0.01em;
+}
+
+.newdes .plan-card {
+	border-left: 7px solid #17224f;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+/* ------ ONLINE_header-picture-online-inner_finish ------ */
+
+/* ------ ONLINE_page_finish ------ */
+
+
+
+/* ------ CONTACTS_page_start------ */
+
+/* ------ header-picture-contacts-inner_start ------ */
+.header-picture-contacts-inner {
+	padding: 50px 0;
+	background: url(../img/picture-2.jpg) no-repeat  center -70px / cover;
+	border-bottom: 4px solid #FF805B;
+	color: #fff;
+	font-size: 16px;
+}
+
+.header-picture-contacts-inner .contacts {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts .fa, .p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-picture-contacts-inner a,
+.header-picture-contacts-inner p {
+	color: #fff;
+}
+
+.header-picture-contacts-inner .fa {
+	color: #17224f;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	border-radius: 100px;
+	font-size: 25px;
+	background: #fff;
+}
+
+.header-picture-contacts-inner .fa {
+	margin-bottom: 15px;
+}
+
+.header-picture-contacts-inner h1 {
+	margin-bottom: 50px;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+	text-align: center;
+	font-size: 37px;
+	color: #fff;
+}
+
+.contacts__address,
+.contacts__numbers,
+.contacts__soc {
+	margin-bottom: 20px;
+}
+
+.contacts-link_name {
+	font-size: 18px;
+}
+
+/* ------ header-picture-contacts-inner_finish ------ */
+
+/* ------ CONTACTS_page_finish------ */
+
+
+
+/* ------ modal_form_START ------ */
+.modal-content {
+	border-radius: 2px;
+	border: 3px solid #FF845B;
+}
+
+.modal-dialog {
+	width: 414px;
+}
+
+.form {
+	padding:  32px 34px 36px 34px;
+	background:  #fff;
+}
+
+.form__title {
+	font-size: 20px;
+	letter-spacing: 0;
+	text-align: center;
+	color: #000;
+}
+
+.form__description {
+	font-size: 14px;
+	letter-spacing: 0.02em;
+	line-height: 1.3em;
+	text-align: center;
+	margin: 12px 0 18px 0; 
+}
+
+input {
+	width: 200px;
+	height: 30px;
+	margin-bottom: 15px;
+	padding: 20px;
+	padding-left: 0;
+	font-size: 14px;
+	border: none;
+	border-bottom: 1px solid #b8b8b8;
+}
+
+input::placeholder {
+	color: #b8b8b8;
+	letter-spacing: 0.08em;
+}
+
+input:focus {
+	border-bottom: 1px solid #000;
+	outline: none;
+}
+
+input:focus::placeholder {
+    color: #000;
+}
+
+label {
+    display: inline-block;
+}
+
+.button-form {
+	width: 310px;
+	height: 48px;
+	margin-top: 14px;
+	background: #FF845B;
+	color: #fff; 
+}
+
+.button-form {
+	font-size: 14px;
+	letter-spacing: 0.034em;
+	text-transform: uppercase;
+}
+
+.button-form:hover {
+	background: rgba(255, 132, 91, 0.9);
+	color: #fff;
+}
+
+.button-form:active {
+	-moz-box-shadow:inset 0px 0px 4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:inset 0px 0px 4px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fa-phone {
+	padding-right: 2px;
+}
+
+.fade {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.close {
+    margin-right: 6px;
+    margin-top: 2px;
+	text-align: right;
+	color: grey;
+}
+
+.modal-content span {
+	color: grey;
+}
+
+
+
+/* ------ slide-menu_START ------ */
+
+span /*привязать спан к классу, чтобы один не висел*/{
+	color: #fff;
+	font-size: 30px;
+	cursor:pointer;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.95);
+
+    overflow-x: hidden;
+  transition: 0.2s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.overlay .a-nav {
+    text-decoration: none;
+    color: #bfbfbf;
+    display: block;
+    font-size: 14px;
+	margin-right: 50px;
+    transition: /*0.1s*/;
+}
+
+.overlay .a-nav:hover, .overlay .a-nav:focus {
+    color: #fff;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 35px;
+    color: #fff;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.block-in-gamburgere {
+	margin-bottom: 20px;
+}
+
+.block-in-gamburgere h3 {
+	font-size: 18px;
+	color: #fff;
+}
+
+/* ------ slide-menu_FINISH ------ */
